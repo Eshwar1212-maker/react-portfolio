@@ -1,26 +1,48 @@
 
-const Hero = () => {
+
+interface ScrollProps{
+    scrollToHome: string
+    scrollToProjects: string
+    scrollToAbout: string
+    scrollToHire: string
+}
+
+const handleClickScroll = (element: string) => {
+    const elementToScroll = document.getElementById(element);
+    if (elementToScroll) {
+        elementToScroll.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
+
+const Hero = ({scrollToHome, scrollToAbout, scrollToHire, scrollToProjects}: ScrollProps) => {
   return (
     <div className="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24">
     <div className="flex flex-wrap md:flex-nowrap">
         <nav className="lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
             <div className="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
-                <a href="#" className="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                <a href="#" onClick={() => handleClickScroll(scrollToHome)} className="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
                     <span className="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
                         Home
                     </span>
                 </a>
-                <a href="#" className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                <a href="#work" onClick={() => handleClickScroll(scrollToProjects)} className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
                     <span className="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
                         Projects
                     </span>
                 </a>
-                <a href="#" className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                <a href="#about" onClick={() => handleClickScroll(scrollToAbout)} className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
                     <span className="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
                         About
                     </span>
                 </a>
-                <a href="#" className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                <a href="#clients" onClick={() => handleClickScroll(scrollToAbout)} className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                    <span className="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
+                        Clients
+                    </span>
+                </a>
+                <a href="#hire" onClick={() => handleClickScroll(scrollToHire)} className="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
                     <span className="bg-black px-2 py-1 rounded-md ml-10 opacity-0">
                         Hire
                     </span>
