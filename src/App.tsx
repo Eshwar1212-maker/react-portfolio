@@ -1,5 +1,6 @@
 import Hero from "./components/Hero"
 import Nav from "./components/Nav"
+import Work from "./components/Work"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
    <div className="text-white font-poppins pb-12">
     <Nav />
     <Hero />
+    <Work />
    </div>
   )
 }
