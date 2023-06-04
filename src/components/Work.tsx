@@ -8,15 +8,6 @@ const Work = () => {
   let [isOpen, setIsOpen] = useState(false);
   let [isSwiftOpen, setIsSwiftOpen] = useState(false);
   let [isFamilyOpen, setIsFamilyOpen] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
 
   function closeModal() {
     setIsOpen(false);
