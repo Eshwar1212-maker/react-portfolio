@@ -1,3 +1,4 @@
+import {AiFillGithub} from 'react-icons/ai';
 
 
 interface ScrollProps{
@@ -59,6 +60,9 @@ const Hero = ({scrollToHome, scrollToAbout, scrollToHire, scrollToProjects}: Scr
                     </div>
                 <a href="#work"><span>View my work.</span></a>
                 </button>
+                <a target='blank' href='https://github.com/Eshwar1212-maker'>
+                <AiFillGithub className="mt-14 ml-5" size={29}/>
+                </a>
             </div>
         </div>
         <img className="hidden lg:block md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-full mt-11 xl:w-[560px] xl:h-[560px]" src="https://newreactportfolio.vercel.app/static/media/avatar.51c511c9c8967408beba.webp"/>
