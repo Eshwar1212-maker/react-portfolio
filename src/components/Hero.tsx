@@ -14,11 +14,9 @@ const handleClickScroll = (element: string) => {
     }
   };
 
-
-
 const Hero = ({scrollToHome, scrollToAbout, scrollToHire, scrollToProjects}: ScrollProps) => {
   return (
-    <div className="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24">
+    <div className="container flex mt-[-110px] justify-between items-center mx-auto px-8 md:px-14 lg:px-24 h-screen">
     <div className="flex flex-wrap md:flex-nowrap">
         <nav className="lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
             <div className="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
@@ -59,7 +57,7 @@ const Hero = ({scrollToHome, scrollToAbout, scrollToHire, scrollToProjects}: Scr
                             <path d="M0 11C0 11 4.125 3.4375 11 3.4375C17.875 3.4375 22 11 22 11C22 11 17.875 18.5625 11 18.5625C4.125 18.5625 0 11 0 11ZM11 15.8125C12.2764 15.8125 13.5004 15.3055 14.403 14.403C15.3055 13.5004 15.8125 12.2764 15.8125 11C15.8125 9.72365 15.3055 8.49957 14.403 7.59705C13.5004 6.69453 12.2764 6.1875 11 6.1875C9.72365 6.1875 8.49957 6.69453 7.59705 7.59705C6.69453 8.49957 6.1875 9.72365 6.1875 11C6.1875 12.2764 6.69453 13.5004 7.59705 14.403C8.49957 15.3055 9.72365 15.8125 11 15.8125Z" fill="white"/>
                         </svg>								
                     </div>
-                    <span>View my work.</span>
+                <a href="#work"><span>View my work.</span></a>
                 </button>
             </div>
         </div>
