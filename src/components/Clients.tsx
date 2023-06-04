@@ -24,7 +24,7 @@ const Clients = () => {
                     <p className="section-paragraph">
                         I’ve had the pleasure of working <a className="underline" target="blank" href="https://www.linkedin.com/in/momatio/">Momat.io </a> 
                         on Fiverr, helping them with issues related to Tailwind CSS on their content delivery network. 
-                        </p>
+                    </p>
                 </div>
 
             </div>
