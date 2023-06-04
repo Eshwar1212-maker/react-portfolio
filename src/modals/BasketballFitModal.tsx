@@ -1,13 +1,12 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
 
 interface ModalProps {
     isOpenModal?: boolean;
     onClose: any;
     openModal?: () => void;
 }
-export default function BasketballFit({ isOpenModal, onClose, openModal }: ModalProps) {
-    let [isOpen, setIsOpen] = useState(false);
+export default function BasketballFit({ isOpenModal, onClose }: ModalProps) {
 
     return (
         <>
