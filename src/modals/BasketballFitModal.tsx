@@ -69,7 +69,7 @@ export default function BasketballFit({ isOpenModal, onClose, openModal }: Modal
                                 </div>
 
                                 <div className="mt-2 flex justify-between gap-5">
-                                <ul className='text-sm list-disc pl-5 w-3/5'>
+                                    <ul className='text-sm list-disc pl-5 w-3/5'>
                                         <li>Engineered a workout and productivity application catered for basketball players, using React, TypeScript,
                                             Node.js, Nest.js, MongoDB, Firebase/Firestore, and Tailwind CSS.</li>
                                         <li>Developed a RESTful API with Nest.js, enabling users to store and manage personalized workout routines
@@ -87,19 +87,18 @@ export default function BasketballFit({ isOpenModal, onClose, openModal }: Modal
                                             and dark mode toggle via the React Context API, ensuring an appealing and adaptable user interface.</li>
                                     </ul>
                                     <div className='flex flex-col text-sm'>
-                                    <img className=' w-[430px] h-[390px]' src='https://www.si.com/.image/t_share/MTk0NDYwOTQ0Nzc0OTk3NTA5/workout-apps-for-men_hero.png' />
+                                        <img className=' w-[430px] h-[390px]' src='https://www.si.com/.image/t_share/MTk0NDYwOTQ0Nzc0OTk3NTA5/workout-apps-for-men_hero.png' />
                                         <a className='text-center' target="/blank" href="https://capstone-ec476.firebaseapp.com/">
                                             <button className='underline'>Live Website</button>
                                         </a>
                                         <button className='underline'>Video demo</button>
                                         <a className='text-center' target="/blank" href="https://github.com/Eshwar1212-maker/BasketballFit">
-                                        <button className='underline'>Github repository</button>
-
+                                            <button className='underline'>Github repository</button>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                        </Transition.Child> 
+                        </Transition.Child>
                     </div>
                 </Dialog>
             </Transition>
