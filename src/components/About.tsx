@@ -14,10 +14,10 @@ const About = () => {
           combination of self-learning and by graduating from a comprehensive full-stack engineering coding bootcamp at the FlatIron School in May 2023.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col">
             <img src="https://miro.medium.com/v2/resize:fit:2000/1*X5z2L4zyEqHUVmCCj2wsPg.png" className="w-full bg-nav h-36 lg:h-72 object-cover cursor-pointer" />
-            <p className="text-[15px] text-gray-300 py-2">A laptop and some coffee is all I need!</p>
+            <p className="section-paragraph">A laptop and some coffee is all I need!</p>
           </div>
 
           <div className="md:col-span-2 lg:col-span-1">

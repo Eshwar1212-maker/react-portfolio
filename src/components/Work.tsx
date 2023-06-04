@@ -41,7 +41,7 @@ const Work = () => {
 
 
   return (
-    <div className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div className="container mt-64 flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full h-screen">
       <BasketballFit
         isOpenModal={isOpen}
         openModal={openModal}
