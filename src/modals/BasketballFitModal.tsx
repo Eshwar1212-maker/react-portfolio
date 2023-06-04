@@ -88,11 +88,14 @@ export default function BasketballFit({ isOpenModal, onClose, openModal }: Modal
                                     </ul>
                                     <div className='flex flex-col text-sm'>
                                     <img className=' w-[430px] h-[390px]' src='https://www.si.com/.image/t_share/MTk0NDYwOTQ0Nzc0OTk3NTA5/workout-apps-for-men_hero.png' />
-                                    <a className='text-center' target="/blank" href="https://capstone-ec476.firebaseapp.com/">
-                                        <button className='underline'>Live Website</button>
-                                    </a>
+                                        <a className='text-center' target="/blank" href="https://capstone-ec476.firebaseapp.com/">
+                                            <button className='underline'>Live Website</button>
+                                        </a>
                                         <button className='underline'>Video demo</button>
+                                        <a className='text-center' target="/blank" href="https://github.com/Eshwar1212-maker/BasketballFit">
                                         <button className='underline'>Github repository</button>
+
+                                        </a>
                                     </div>
                                 </div>
                             </div>
