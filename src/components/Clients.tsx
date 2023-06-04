@@ -29,8 +29,8 @@ const Clients = () => {
 
             </div>
         </div>
-
     </section>
+    
 </div>
   )
 }
