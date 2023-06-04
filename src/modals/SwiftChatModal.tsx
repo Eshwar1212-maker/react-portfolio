@@ -65,7 +65,7 @@ export default function SwiftChatModal({ isOpenModal, onClose, openModal }: Moda
                   </div>
                 </div>
                 <div className=''>
-                  <p className='text-[16px]'>Nextjs · TypeScript · Nextjs · Prisma · MongoDB · HeadlessUI · Pusher · Nextauth · Tailwind CSS · React.js</p>
+                  <p className='text-[16px]'>Nextjs · TypeScript · Prisma · MongoDB · HeadlessUI · Pusher · Nextauth · Tailwind CSS · React.js</p>
                 </div>
 
                 <div className="mt-2 flex justify-between gap-5">
@@ -98,11 +98,11 @@ export default function SwiftChatModal({ isOpenModal, onClose, openModal }: Moda
                   </ul>
                   <div className="flex flex-col text-sm">
                     <img className="w-[430px] h-[390px]" src="https://www.si.com/.image/t_share/MTk0NDYwOTQ0Nzc0OTk3NTA5/workout-apps-for-men_hero.png" />
-                    <a className="text-center" target="_blank" href="https://capstone-ec476.firebaseapp.com/">
+                    <a className="text-center" target="_blank" href="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fconversations">
                       <button className="underline">Live Website</button>
                     </a>
                     <button className="underline">Video demo</button>
-                    <a className="text-center" target="_blank" href="https://github.com/Eshwar1212-maker/BasketballFit">
+                    <a className="text-center" target="_blank" href="https://github.com/Eshwar1212-maker/swiftchat">
                       <button className="underline">Github repository</button>
                     </a>
                   </div>

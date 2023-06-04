@@ -6,7 +6,7 @@ interface ModalProps {
     onClose: any;
     openModal?: () => void;
 }
-export default function BasketballFit({ isOpenModal, onClose, openModal }: ModalProps) {
+export default function FamilyGram({ isOpenModal, onClose, openModal }: ModalProps) {
     let [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -52,7 +52,7 @@ export default function BasketballFit({ isOpenModal, onClose, openModal }: Modal
                                         as="h3"
                                         className="text-lg font-medium leading-6 text-gray-900"
                                     >
-                                        BasketballFit
+                                        FamilyGram
                                     </Dialog.Title>
                                     <div className="">
                                         <button
@@ -65,36 +65,19 @@ export default function BasketballFit({ isOpenModal, onClose, openModal }: Modal
                                     </div>
                                 </div>
                                 <div className=''>
-                                    <p className='text-[16px]'>React · Typescript · Nodejs · Nestjs · Mongodb · Firebase/Firestore</p>
+                                    <p className='text-[16px]'>React · Tailwind CSS · Firebase/Firestore</p>
                                 </div>
 
                                 <div className="mt-2 flex justify-between gap-5">
                                     <ul className='text-sm list-disc pl-5 w-3/5'>
-                                        <li>Engineered a workout and productivity application catered for basketball players, using React, TypeScript,
-                                            Node.js, Nest.js, MongoDB, Firebase/Firestore, and Tailwind CSS.</li>
-                                        <li>Developed a RESTful API with Nest.js, enabling users to store and manage personalized workout routines
-                                            on their calendar, complete with visual charts for monthly workout intensity and consistency reports, all
-                                            persistently stored using MongoDB.</li>
-                                        <li>Incorporated a group chat feature using Firebase/Firestore, allowing users to exchange messages with
-                                            their teams, plan games, and cultivate team collaboration and engagement.</li>
-                                        <li>Implemented a dedicated forum section with Firestore, creating an interactive platform for authenticated
-                                            users to engage in insightful basketball-related discussions, fostering a sense of community.</li>
-                                        <li>Applied lazy loading techniques to enhance application speed, reduce bundle size, and only load routes based on user requests,
-
-                                            contributing to an optimized and responsive user experience.</li>
-                                        <li>Utilized the React Context API for global state management, ensuring consistent and seamless access to user data across the application.</li>
-                                        <li>Prioritized a responsive, mobile-first design approach using Tailwind CSS, along with the implementation of a user-friendly light
-                                            and dark mode toggle via the React Context API, ensuring an appealing and adaptable user interface.</li>
+                                        <li>Created a website where people can talk about what is on their minds using React, Tailwind CSS, and Firebase.</li>
+                                     
                                     </ul>
                                     <div className='flex flex-col text-sm'>
-                                        <img className=' w-[430px] h-[390px]' src='https://www.si.com/.image/t_share/MTk0NDYwOTQ0Nzc0OTk3NTA5/workout-apps-for-men_hero.png' />
-                                        <a className='text-center' target="/blank" href="https://capstone-ec476.firebaseapp.com/">
+                                        <img className=' w-[430px] h-[390px]' src='https://i.insider.com/59d9fd2884da9579bc3a5ff4?width=1136&format=jpeg' />
+                                        <a className='text-center' target="/blank" href="https://fsgvfsgsgbgffa.web.app/">
                                             <button className='underline'>Live Website</button>
-                                        </a>
-                                        <button className='underline'>Video demo</button>
-                                        <a className='text-center' target="/blank" href="https://github.com/Eshwar1212-maker/BasketballFit">
-                                            <button className='underline'>Github repository</button>
-                                        </a>
+                                        </a>                        
                                     </div>
                                 </div>
                             </div>
