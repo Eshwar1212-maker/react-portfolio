@@ -13,7 +13,8 @@ const Nav = () => {
           <a href="#hire"><button className="px-6 py-2 bg-theme font-bold">Hire Me</button></a>
         </div>
         <div className="md:hidden">
-          <img className="w-[49px] h-[49px] text-white bg-white rounded-full" src="https://www.svgrepo.com/show/452302/hamburger-menu.svg"/>
+        <a href="#hire"><button className=" p-2 py-3 rounded-3xl bg-white font-bold text-black">Contact</button></a>
+
         </div>
       </div>
     </header>
