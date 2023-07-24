@@ -9,7 +9,7 @@ interface ModalProps {
     github: string
     demo: string
 }
-export default function BasketballFit({ isOpenModal, onClose, live, github, demo }: ModalProps) {
+export default function BasketballFit({ isOpenModal, onClose, live }: ModalProps) {
 
     return (
         <>

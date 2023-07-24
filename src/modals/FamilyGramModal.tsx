@@ -7,7 +7,7 @@ interface ModalProps {
     openModal?: () => void;
     live: string
 }
-export default function FamilyGram({ isOpenModal, onClose, live }: ModalProps) {
+export default function FamilyGram({ isOpenModal, onClose }: ModalProps) {
 
     return (
         <>

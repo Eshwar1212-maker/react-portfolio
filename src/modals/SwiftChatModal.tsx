@@ -9,7 +9,7 @@ interface ModalProps {
   github: string
   demo: string
 }
-export default function SwiftChatModal({ isOpenModal, onClose, live, github, demo }: ModalProps) {
+export default function SwiftChatModal({ isOpenModal, onClose,}: ModalProps) {
   return (
     <>
       <Transition appear show={isOpenModal} as={Fragment}>
