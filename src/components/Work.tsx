@@ -76,7 +76,19 @@ const Work = () => {
 }
 export default Work
 
-const ProjectItem = ({ imageSrc, title, onClick }: any) => {
+interface ProjectItemProps{ 
+  imageSrc: string,
+  onClick?: any
+  github?:string
+  githubLink?: string
+  live?: string
+  liveLink?: string
+  title?:string
+  demo?: string
+  demoLink?: string
+}
+
+const ProjectItem = ({ imageSrc, onClick, github, githubLink, live, liveLink, demo, demoLink, title }: ProjectItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -98,7 +110,12 @@ const ProjectItem = ({ imageSrc, title, onClick }: any) => {
       {isHovered && (
         <div className="absolute inset-0 flex flex-col justify-center bg-black bg-opacity-75 text-white text-center">
           <h3 className="text-lg font-semibold">{title}</h3>
-          <p className="text-[13px] py-2">Click for more info</p>
+          <p className="hidden md:text-[13px] py-2">Click for more info</p>
+          <div className="flex gap-4 justify-center">
+              <a target="blank" href={githubLink} className="">{github}</a>
+              <a target="blank" href={liveLink} className="">{live}</a>
+              <a target="blank" href={demoLink} className="">{demo}</a>
+          </div>
         </div>
       )}
     </div>
