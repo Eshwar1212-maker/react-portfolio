@@ -5,8 +5,11 @@ interface ModalProps {
     isOpenModal?: boolean;
     onClose: any;
     openModal?: () => void;
+    live: string
+    github: string
+    demo: string
 }
-export default function BasketballFit({ isOpenModal, onClose }: ModalProps) {
+export default function BasketballFit({ isOpenModal, onClose, live, github, demo }: ModalProps) {
 
     return (
         <>
@@ -45,8 +48,14 @@ export default function BasketballFit({ isOpenModal, onClose }: ModalProps) {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <div className="inline-block w-[800px] min-h-1/2 md:min-h-3/4 lg:min-h-full p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
-                                <div className='flex justify-between'>
+              <div
+                className="inline-block w-full sm:w-[600px] md:w-[700px] lg:w-[800px] h-auto md:min-h-3/4 lg:min-h-full p-6 my-8 
+                overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl overflow-y-auto"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                }}
+              >                                <div className='flex justify-between'>
                                     <Dialog.Title
                                         as="h3"
                                         className="text-lg font-medium leading-6 text-gray-900"
@@ -87,7 +96,7 @@ export default function BasketballFit({ isOpenModal, onClose }: ModalProps) {
                                     </ul>
                                     <div className='flex flex-col text-sm'>
                                         <img className=' w-[430px] h-[390px]' src='https://www.si.com/.image/t_share/MTk0NDYwOTQ0Nzc0OTk3NTA5/workout-apps-for-men_hero.png' />
-                                        <a className='text-center' target="/blank" href="https://capstone-ec476.firebaseapp.com/">
+                                        <a className='text-center' target="/blank" href={live}>
                                             <button className='underline'>Live Website</button>
                                         </a>
                                         <button className='underline'>Video demo</button>

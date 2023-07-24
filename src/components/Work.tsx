@@ -14,16 +14,16 @@ const Work = () => {
   }
 
   function openModal() {
-    setIsOpen(true);
+    setIsOpen(false);
   }
   function openSwiftModal() {
-    setIsSwiftOpen(true);
+    setIsSwiftOpen(false);
   }
   function closeSwiftModal() {
     setIsSwiftOpen(false);
   }
   function openFamily() {
-    setIsFamilyOpen(true);
+    setIsFamilyOpen(false);
   }
   function closeFamily() {
     setIsFamilyOpen(false);
@@ -37,16 +37,24 @@ const Work = () => {
         isOpenModal={isOpen}
         openModal={openModal}
         onClose={closeModal}
+        demo="https://www.loom.com/share/d7b67b83c5e1436ba89c522fe884e387"
+        live="https://capstone-ec476.firebaseapp.com/"
+        github="https://github.com/Eshwar1212-maker/BasketballFit"
       />
       <SwiftChatModal
         isOpenModal={isSwiftOpen}
         openModal={openSwiftModal}
         onClose={closeSwiftModal}
+        demo="https://www.loom.com/share/2674de7ec21c40618c5750451a3a4f70"
+        live="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fusers"
+        github="https://github.com/Eshwar1212-maker/swiftchat"
       />
          <FamilyGram
         isOpenModal={isFamilyOpen}
         openModal={openFamily}
         onClose={closeFamily}
+        live="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fusers"
+
       />
       <section className="w-full">
         <h2 id="work" className="secondary-title">My work</h2>
@@ -57,17 +65,30 @@ const Work = () => {
             onClick={openModal}
             imageSrc="https://hips.hearstapps.com/hmg-prod/images/sportsman-in-the-gym-texting-on-smartphone-royalty-free-image-537230860-1546969957.jpg"
             title="BasketballFit"
+            githubLink="https://github.com/Eshwar1212-maker/BasketballFit"
+            liveLink="https://capstone-ec476.firebaseapp.com/"
+            demoLink="https://www.loom.com/share/d7b67b83c5e1436ba89c522fe884e387"
+            live="Live website"
+            demo="Video demo"
+            github="Github repository"
           />
           <ProjectItem
             onClick={openSwiftModal}
-            imageSrc="https://pittnews.com/wp-content/uploads/2021/12/DSC_8799-1-900x601.jpg
-            "
+            imageSrc="https://pittnews.com/wp-content/uploads/2021/12/DSC_8799-1-900x601.jpg"
             title="SwiftChat"
+            githubLink="https://github.com/Eshwar1212-maker/swiftchat"
+            liveLink="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fusers"
+            demoLink="https://www.loom.com/share/2674de7ec21c40618c5750451a3a4f70"
+            live="Live website"
+            demo="Video demo"
+            github="Github repository"
           />
           <ProjectItem
             onClick={openFamily}
             imageSrc="https://i.insider.com/59d9fd2884da9579bc3a5ff4?width=1136&format=jpeg"
             title="FamilyGram"
+            liveLink="https://fsgvfsgsgbgffa.web.app/"
+            live="Live website"
           />
         </div>
       </section>
@@ -111,7 +132,7 @@ const ProjectItem = ({ imageSrc, onClick, github, githubLink, live, liveLink, de
         <div className="absolute inset-0 flex flex-col justify-center bg-black bg-opacity-75 text-white text-center">
           <h3 className="text-lg font-semibold">{title}</h3>
           <p className="hidden md:text-[13px] py-2">Click for more info</p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4 justify-center underline">
               <a target="blank" href={githubLink} className="">{github}</a>
               <a target="blank" href={liveLink} className="">{live}</a>
               <a target="blank" href={demoLink} className="">{demo}</a>
@@ -121,4 +142,3 @@ const ProjectItem = ({ imageSrc, onClick, github, githubLink, live, liveLink, de
     </div>
   );
 };
-
