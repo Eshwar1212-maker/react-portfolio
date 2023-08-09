@@ -35,7 +35,7 @@ const Work = () => {
     <div className="container mt-64 flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full h-screen">
       <BasketballFitModal
         isOpen={isOpen}
-        onClose={closeModal}
+        onClose={() => setIsOpen(false)}
         demo="https://www.loom.com/share/d7b67b83c5e1436ba89c522fe884e387"
         live="https://capstone-ec476.firebaseapp.com/"
         github="https://github.com/Eshwar1212-maker/BasketballFit"
@@ -61,7 +61,7 @@ const Work = () => {
           older projects i was working on when i first started coding.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <ProjectItem
-            onClick={openModal}
+            onClick={() => setIsOpen(true)}
             imageSrc="https://hips.hearstapps.com/hmg-prod/images/sportsman-in-the-gym-texting-on-smartphone-royalty-free-image-537230860-1546969957.jpg"
             title="BasketballFit"
             githubLink="https://github.com/Eshwar1212-maker/BasketballFit"
