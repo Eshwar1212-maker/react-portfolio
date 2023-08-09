@@ -1,4 +1,4 @@
-import {AiFillGithub} from 'react-icons/ai';
+import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 
 
 interface ScrollProps{
@@ -62,6 +62,9 @@ const Hero = ({scrollToHome, scrollToAbout, scrollToHire, scrollToProjects}: Scr
                 </button>
                 <a target='blank' href='https://github.com/Eshwar1212-maker'>
                 <AiFillGithub className="mt-14 ml-5" size={29}/>
+                </a>
+                <a target='blank' href='https://www.linkedin.com/in/eshwar-tangirala-08973316b/'>
+                <AiFillLinkedin className="mt-14 ml-5" size={32}/>
                 </a>
             </div>
         </div>

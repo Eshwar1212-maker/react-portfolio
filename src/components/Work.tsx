@@ -1,7 +1,7 @@
 import { useState } from "react";
-import BasketballFit from "../modals/BasketballFitModal"
 import SwiftChatModal from "../modals/SwiftChatModal";
 import FamilyGram from "../modals/FamilyGramModal";
+import BasketballFitModal from "../modals/BasketballFitModal";
 
 
 const Work = () => {
@@ -33,9 +33,8 @@ const Work = () => {
 
   return (
     <div className="container mt-64 flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full h-screen">
-      <BasketballFit
-        isOpenModal={isOpen}
-        openModal={openModal}
+      <BasketballFitModal
+        isOpen={isOpen}
         onClose={closeModal}
         demo="https://www.loom.com/share/d7b67b83c5e1436ba89c522fe884e387"
         live="https://capstone-ec476.firebaseapp.com/"
