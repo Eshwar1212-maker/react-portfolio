@@ -1,33 +1,13 @@
 import { useState } from "react";
 import SwiftChatModal from "../modals/SwiftChatModal";
-import FamilyGram from "../modals/FamilyGramModal";
 import BasketballFitModal from "../modals/BasketballFitModal";
 
 
 const Work = () => {
   let [isOpen, setIsOpen] = useState(false);
   let [isSwiftOpen, setIsSwiftOpen] = useState(false);
-  let [isFamilyOpen, setIsFamilyOpen] = useState(false);
 
-  function closeModal() {
-    setIsOpen(false);
-  }
 
-  function openModal() {
-    setIsOpen(false);
-  }
-  function openSwiftModal() {
-    setIsSwiftOpen(false);
-  }
-  function closeSwiftModal() {
-    setIsSwiftOpen(false);
-  }
-  function openFamily() {
-    setIsFamilyOpen(false);
-  }
-  function closeFamily() {
-    setIsFamilyOpen(false);
-  }
 
 
 
@@ -41,20 +21,13 @@ const Work = () => {
         github="https://github.com/Eshwar1212-maker/BasketballFit"
       />
       <SwiftChatModal
-        isOpenModal={isSwiftOpen}
-        openModal={openSwiftModal}
-        onClose={closeSwiftModal}
+        isOpen={isSwiftOpen}
+        onClose={() => setIsSwiftOpen(false)}
         demo="https://www.loom.com/share/2674de7ec21c40618c5750451a3a4f70"
         live="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fusers"
         github="https://github.com/Eshwar1212-maker/swiftchat"
       />
-         <FamilyGram
-        isOpenModal={isFamilyOpen}
-        openModal={openFamily}
-        onClose={closeFamily}
-        live="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fusers"
 
-      />
       <section className="w-full">
         <h2 id="work" className="secondary-title">My work</h2>
         <p className="section-paragraph">These are the projects I have worked on so far, with the most complex, fun projects being first, down in order to the
@@ -72,7 +45,7 @@ const Work = () => {
             github="Github repository"
           />
           <ProjectItem
-            onClick={openSwiftModal}
+            onClick={() => setIsSwiftOpen(true)}
             imageSrc="https://pittnews.com/wp-content/uploads/2021/12/DSC_8799-1-900x601.jpg"
             title="SwiftChat"
             githubLink="https://github.com/Eshwar1212-maker/swiftchat"
@@ -83,7 +56,6 @@ const Work = () => {
             github="Github repository"
           />
           <ProjectItem
-            onClick={openFamily}
             imageSrc="https://i.insider.com/59d9fd2884da9579bc3a5ff4?width=1136&format=jpeg"
             title="FamilyGram"
             liveLink="https://fsgvfsgsgbgffa.web.app/"

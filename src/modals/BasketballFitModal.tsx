@@ -12,7 +12,7 @@ interface ModalProps {
   github: string
 }
 
-const BasketballFitModal: React.FC<ModalProps> = ({ isOpen, onClose, demo, live, github }) => {
+const BasketballFitModal: React.FC<ModalProps> = ({ isOpen, onClose}) => {
   return (
 <Transition.Root show={isOpen} as={Fragment}>
   <Dialog as="div" className="fixed z-50 inset-0 flex items-center justify-center" onClose={onClose}>
@@ -56,50 +56,29 @@ const BasketballFitModal: React.FC<ModalProps> = ({ isOpen, onClose, demo, live,
         <div className="w-full">
           <div className="flex justify-between">
             <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
-              SwiftChat
+              BasketballFit
             </Dialog.Title>
           </div>
 
           <p className="mt-4 text-[16px]">
-            Nextjs · TypeScript · Prisma · MongoDB · HeadlessUI · Pusher · Nextauth · Tailwind CSS · React.js
+          TypeScript · Nodejs · NestJS · Cloud Firestore · MongoDB · Firebase · React.js
           </p>
 
           <div className="mt-4 flex flex-wrap gap-5">
             <ul className="flex-grow text-sm list-disc pl-5">
             <li>
-                      Developed a real-time chat application using Next.js 13,
-                      leveraging its modern routing system and server-side
-                      rendering features to improve performance and provide a
-                      seamless user experience.
+            Developed a REST API with NestJS, enabling users to manage personalized workout routines on their calendar, complete with visual charts for monthly workout consistency/intensity reports, persistently stored in MongoDB.
                     </li>
                     <li>
-                      Designed and implemented user authentication using Next
-                      Auth with Google, Github, email, and password options to
-                      ensure secure access.
+                    complete with visual charts for monthly workout consistency/intensity reports, persistently stored in MongoDB.
+Implemented a dedicated forum section with Firestore, creating an interactive platform for authenticated users to engage in insightful basketball-related discussions, fostering a sense of community.
+
                     </li>
                     <li>
-                      Integrated Pusher for real-time web socket communication,
-                      enabling instant message updates across all users within a
-                      specific chat group.
+                    Applied lazy loading techniques to improve application speed, reduce bundle size, and enhance user experience.
                     </li>
                     <li>
-                      Utilized Cloudinary for efficient image upload and
-                      management, enhancing the app's multimedia capabilities.
-                    </li>
-                    <li>
-                      Engineered a feature allowing users to create group chats
-                      and message other users, enhancing user engagement and
-                      interaction.
-                    </li>
-                    <li>
-                      Leveraged Zustand for global state management, ensuring
-                      reliable and consistent user data across the application.
-                    </li>
-                    <li>
-                      Employed Tailwind CSS for a responsive, mobile-first
-                      design, and incorporated Headless UI to maintain excellent
-                      keyboard accessibility and HTML semantics, enhancing the
-                      app's usability across various devices and user needs.
+                    Utilized the React Context API for global state management, accessing user data across the application, including a light and dark mode, persisted for every user using the browser’s local storage. 
                     </li>
             </ul>
 
