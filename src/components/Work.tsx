@@ -128,9 +128,9 @@ const ProjectItem = ({ imageSrc, onClick, github, githubLink, live, liveLink, de
           <h3 className="text-lg font-semibold">{title}</h3>
           <p className="hidden md:text-[13px] py-2">Click for more info</p>
           <div className="flex gap-4 justify-center underline">
-              <a target="blank" href={githubLink} className="">{github}</a>
-              <a target="blank" href={liveLink} className="">{live}</a>
-              <a target="blank" href={demoLink} className="">{demo}</a>
+              <a target="blank" href={githubLink} className="" aria-label={`${title} github repo`}>{github}</a>
+              <a target="blank" href={liveLink} className="" aria-label={`${title} live website`}>{live}</a>
+              <a target="blank" href={demoLink} className="" aria-label={`${title} video demo`}>{demo}</a>
           </div>
         </div>
       )}

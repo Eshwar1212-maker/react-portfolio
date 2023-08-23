@@ -105,6 +105,7 @@ const SwiftChatModal: React.FC<ModalProps> = ({
                     className="text-center mt-2"
                     target="_blank"
                     href="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fconversations"
+                    aria-label="live website"
                   >
                     <button className="underline">Live Website</button>
                   </a>

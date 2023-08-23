@@ -69,10 +69,10 @@ const SyncModal: React.FC<SyncModalProps> = ({ isOpen, onClose }) => {
               <div className="mt-4 flex flex-wrap gap-5">
                 <ul className="flex-grow text-sm list-disc pl-5">
                   <li>
-                    Leveraged Nextjs 13's app router to make a all in one
-                    workout app for athlets. THis project has a full messaging
+                    Leveraged Nextjs 13's app router to make an all in one
+                    workout app for athletes. This project has a full messaging
                     system, calender, workout log, and a dashboard to track user
-                    progress
+                    progress.
                   </li>
                   <li>
                     Used prisma and mongodb for a highly scalable backend
@@ -82,16 +82,16 @@ const SyncModal: React.FC<SyncModalProps> = ({ isOpen, onClose }) => {
                   <li>
                     Used FullCalender to render a calender where athlets can
                     track everything related to their sport, such as practices,
-                    games, events, etc
+                    games, events, etc.
                   </li>
                   <li>
                     Created a workout log and dashboard feature, for users to be
-                    able to track their workouts , and also add them to the
+                    able to track their workouts, and also add them to their
                     calender. Utilized Tremor for visual charts showcasing
-                    progress in the gym
+                    progress in the gym.
                   </li>
                   <li>
-                    Used Pusher.io for a seamless messaging system, so athlets
+                    Used Pusher.io for a seamless messaging system, so athletes
                     can create group chats with their team or friends. Allowing
                     them to schedule events easily.
                   </li>
@@ -106,6 +106,7 @@ const SyncModal: React.FC<SyncModalProps> = ({ isOpen, onClose }) => {
                     className="text-center mt-2"
                     target="_blank"
                     href="https://sportssync.vercel.app/"
+                    aria-label="live website"
                   >
                     <button className="underline">Live Website</button>
                   </a>
@@ -113,6 +114,7 @@ const SyncModal: React.FC<SyncModalProps> = ({ isOpen, onClose }) => {
                     className="text-center mt-2"
                     target="_blank"
                     href="https://www.loom.com/share/0deb7783ff534e1ca21d8ccca999e4f1"
+                    aria-label="video demo"
                   >
                    <button className="underline mt-2">Video demo</button>
                   </a>
@@ -120,6 +122,7 @@ const SyncModal: React.FC<SyncModalProps> = ({ isOpen, onClose }) => {
                     className="text-center mt-2"
                     target="_blank"
                     href="https://github.com/Eshwar1212-maker/Sports-Sync"
+                    aria-label="github repository"
                   >
                     <button className="underline">Github repository</button>
                   </a>

@@ -83,11 +83,17 @@ Implemented a dedicated forum section with Firestore, creating an interactive pl
             </ul>
 
             <div className="flex flex-col w-1/3 text-sm">
-              <a className="text-center mt-2" target="_blank" href="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fconversations">
+              <a className="text-center mt-2" target="_blank" href="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fconversations" aria-label='live website'>
                 <button className="underline">Live Website</button>
               </a>
-              <button className="underline mt-2">Video demo</button>
-              <a className="text-center mt-2" target="_blank" href="https://github.com/Eshwar1212-maker/swiftchat">
+              <a className="text-center mt-2" target="_blank" href="https://www.loom.com/share/d7b67b83c5e1436ba89c522fe884e387" aria-label='video demo'>
+              <button className="underline mt-2">
+                Video demo
+              </button>
+              </a>
+
+
+              <a className="text-center mt-2" target="_blank" href="https://github.com/Eshwar1212-maker/swiftchat" aria-label='github repository'>
                 <button className="underline">Github repository</button>
               </a>
             </div>

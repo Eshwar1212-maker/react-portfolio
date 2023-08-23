@@ -106,14 +106,23 @@ const SwiftChatModal: React.FC<ModalProps> = ({
                     className="text-center mt-2"
                     target="_blank"
                     href="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fconversations"
+                    aria-label="live website"
                   >
                     <button className="underline">Live Website</button>
                   </a>
+                  <a
+                    className="text-center mt-2"
+                    target="_blank"
+                    href="https://www.loom.com/share/2674de7ec21c40618c5750451a3a4f70"
+                    aria-label="video demo"
+                  >
                   <button className="underline mt-2">Video demo</button>
+                  </a>
                   <a
                     className="text-center mt-2"
                     target="_blank"
                     href="https://github.com/Eshwar1212-maker/swiftchat"
+                    aria-label="github repository"
                   >
                     <button className="underline">Github repository</button>
                   </a>
