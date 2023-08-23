@@ -122,7 +122,7 @@ const ProjectItem = ({ imageSrc, onClick, github, githubLink, live, liveLink, de
       onMouseLeave={handleMouseLeave}
       onClick={onClick} // Added onClick event here
     >
-      <img src={imageSrc} className="object-cover h-full w-full" alt={title} />
+      <img src={imageSrc} className="object-cover h-full w-full" alt={`${title} image for project`} />
       {isHovered && (
         <div className="absolute inset-0 flex flex-col justify-center bg-black bg-opacity-75 text-white text-center">
           <h3 className="text-lg font-semibold">{title}</h3>
