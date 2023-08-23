@@ -23,9 +23,9 @@ const About = () => {
           <div className="md:col-span-2 lg:col-span-1">
             <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-3">Skills</h3>
             <p className="section-paragraph">I have a solid understanding of software engineering principles and a knack for solving complex problems.
-              I've worked programming languages such as Typescript, JavaScript, Java Python.
+              I've worked programming languages such as Typescript, JavaScript, Java, and Python.
               The frameworks I work with are React, NextJS, Node.js, NestJS, Flask and Express. My go to choice for styling 
-              my applications is TailwindCSS, and HeadlessUI. </p>
+              my applications is TailwindCSS</p>
           </div>
         </div>
       </section>
