@@ -13,9 +13,6 @@ interface ModalProps {
 const SwiftChatModal: React.FC<ModalProps> = ({
   isOpen,
   onClose,
-  demo,
-  live,
-  github,
 }) => {
   return (
     <Transition.Root show={isOpen} as={Fragment}>
