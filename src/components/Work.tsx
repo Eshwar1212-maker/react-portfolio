@@ -1,11 +1,17 @@
 import { useState } from "react";
 import SwiftChatModal from "../modals/SwiftChatModal";
 import BasketballFitModal from "../modals/BasketballFitModal";
+import syncImgae from "../assets/sync.png"
+import basketball from "../assets/basketballtwo.png"
+import chat from "../assets/chat.png"
+import gram from "../assets/gram.png"
+import SyncModal from "../modals/SyncedModal";
 
 
 const Work = () => {
   let [isOpen, setIsOpen] = useState(false);
   let [isSwiftOpen, setIsSwiftOpen] = useState(false);
+  let [isSyncedOPen, setIsSyncedOpen] = useState(false);
 
 
 
@@ -27,6 +33,13 @@ const Work = () => {
         live="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fusers"
         github="https://github.com/Eshwar1212-maker/swiftchat"
       />
+      <SyncModal
+        isOpen={isSyncedOPen}
+        onClose={() => setIsSyncedOpen(false)}
+        demo="https://www.loom.com/share/2674de7ec21c40618c5750451a3a4f70"
+        live="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fusers"
+        github="https://github.com/Eshwar1212-maker/swiftchat"
+      />
 
       <section className="w-full">
         <h2 id="work" className="secondary-title">My work</h2>
@@ -34,8 +47,19 @@ const Work = () => {
           older projects i was working on when i first started coding.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <ProjectItem
+            onClick={() => setIsSyncedOpen(true)}
+            imageSrc={syncImgae}
+            title="Synced"
+            githubLink="https://github.com/Eshwar1212-maker/Sports-Sync"
+            liveLink="https://sportssync.vercel.app/"
+            demoLink="https://www.loom.com/share/0deb7783ff534e1ca21d8ccca999e4f1"
+            live="Live website"
+            demo="Video demo"
+            github="Github repository"
+          />
+          <ProjectItem
             onClick={() => setIsOpen(true)}
-            imageSrc="https://hips.hearstapps.com/hmg-prod/images/sportsman-in-the-gym-texting-on-smartphone-royalty-free-image-537230860-1546969957.jpg"
+            imageSrc={basketball}
             title="BasketballFit"
             githubLink="https://github.com/Eshwar1212-maker/BasketballFit"
             liveLink="https://capstone-ec476.firebaseapp.com/"
@@ -46,7 +70,7 @@ const Work = () => {
           />
           <ProjectItem
             onClick={() => setIsSwiftOpen(true)}
-            imageSrc="https://pittnews.com/wp-content/uploads/2021/12/DSC_8799-1-900x601.jpg"
+            imageSrc={chat}
             title="SwiftChat"
             githubLink="https://github.com/Eshwar1212-maker/swiftchat"
             liveLink="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fusers"
@@ -56,7 +80,7 @@ const Work = () => {
             github="Github repository"
           />
           <ProjectItem
-            imageSrc="https://i.insider.com/59d9fd2884da9579bc3a5ff4?width=1136&format=jpeg"
+            imageSrc={gram}
             title="FamilyGram"
             liveLink="https://fsgvfsgsgbgffa.web.app/"
             live="Live website"
@@ -93,12 +117,12 @@ const ProjectItem = ({ imageSrc, onClick, github, githubLink, live, liveLink, de
 
   return (
     <div
-      className="relative w-full bg-nav h-36 lg:h-72 cursor-pointer"
-      onMouseEnter={handleMouseEnter}
+    className="relative w-full bg-nav cursor-pointer"
+    onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={onClick} // Added onClick event here
     >
-      <img src={imageSrc} className="w-full h-full object-cover" alt={title} />
+      <img src={imageSrc} className="object-cover h-full w-full" alt={title} />
       {isHovered && (
         <div className="absolute inset-0 flex flex-col justify-center bg-black bg-opacity-75 text-white text-center">
           <h3 className="text-lg font-semibold">{title}</h3>
