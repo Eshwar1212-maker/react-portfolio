@@ -58,23 +58,23 @@ const Work = () => {
             github="Github repository"
           />
           <ProjectItem
-            onClick={() => setIsOpen(true)}
-            imageSrc={basketball}
-            title="BasketballFit"
-            githubLink="https://github.com/Eshwar1212-maker/BasketballFit"
-            liveLink="https://capstone-ec476.firebaseapp.com/"
-            demoLink="https://www.loom.com/share/d7b67b83c5e1436ba89c522fe884e387"
-            live="Live website"
-            demo="Video demo"
-            github="Github repository"
-          />
-          <ProjectItem
             onClick={() => setIsSwiftOpen(true)}
             imageSrc={chat}
             title="SwiftChat"
             githubLink="https://github.com/Eshwar1212-maker/swiftchat"
             liveLink="https://swiftchat-spvb.vercel.app/?callbackUrl=%2Fusers"
             demoLink="https://www.loom.com/share/2674de7ec21c40618c5750451a3a4f70"
+            live="Live website"
+            demo="Video demo"
+            github="Github repository"
+          />
+          <ProjectItem
+            onClick={() => setIsOpen(true)}
+            imageSrc={basketball}
+            title="BasketballFit"
+            githubLink="https://github.com/Eshwar1212-maker/BasketballFit"
+            liveLink="https://capstone-ec476.firebaseapp.com/"
+            demoLink="https://www.loom.com/share/d7b67b83c5e1436ba89c522fe884e387"
             live="Live website"
             demo="Video demo"
             github="Github repository"
